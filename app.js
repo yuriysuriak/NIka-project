@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded', function() {
     musicToggle.addEventListener('click', () => {
         if (isPlaying) {
             audio.pause(); // Зупиняємо музику
-            musicIcon.src = '1109198e-eb9d-4b13-ac1f-a83118e94801_removalai_preview.png'; // Іконка для музики, коли вона на паузі
+            musicIcon.src = 'photo/1109198e-eb9d-4b13-ac1f-a83118e94801_removalai_preview.png'; // Іконка для музики, коли вона на паузі
         } else {
             audio.play(); // Відтворюємо музику
-            musicIcon.src = 'ear-muffs_10898488.png'; // Іконка для музики, коли вона відтворюється
+            musicIcon.src = 'photo/ear-muffs_10898488.png'; // Іконка для музики, коли вона відтворюється
         }
         isPlaying = !isPlaying; // Перемикаємо стан
     });
