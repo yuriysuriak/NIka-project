@@ -39,3 +39,17 @@ document.addEventListener('DOMContentLoaded', function() {
         isPlaying = !isPlaying; // Перемикаємо стан
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const btnka = document.getElementById('btnka');
+    const audio = document.getElementById('audio');
+    
+    btnka.addEventListener('click', function() {
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    });
+});

@@ -5,6 +5,7 @@
     <link rel='stylesheet' href='style.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Ресторан</title>
 </head>
@@ -24,9 +25,7 @@
             </div>
 
             <div class='cart'>
-                <a href="#">
-                    <img class='cart-img' src="photo/cart.png" alt="Корзина">
-                </a>
+                <a href="#"><img class='cart-img' src="photo/cart.png" alt="Корзина"></a>
             </div>
 
             <div class='phone'>
@@ -34,35 +33,67 @@
                     <div class='phone-img'>
                         <img src="photo/phone.png" alt="Телефон">
                     </div>
-
-                    <div class='number'><a class='num' href='#'>+999-888-76-54</a></div>
+                    <div class='number'><a class='num' href='#'>+380-068-427-2222</a></div>
                 </div>
-
-                <div class='phone-text'>
-                    Зв'яжіться з нами для <br> бронювання
-                </div>
+                <div class='phone-text'>Зв'яжіться з нами для <br> бронювання</div>
             </div>
 
             <div class='btn'>
-                <a class='button' href="https://www.booking.com/hotel/ua/holiday-stay-nika.ru.html?aid=356980&label=gog235jc-1DCAso6QFCEWhvbGlkYXktc3RheS1uaWthSClYA2jpAYgBAZgBIbgBGMgBDNgBA-gBAYgCAagCBLgCwpPywAbAAgHSAiRiMDhjZGUyMC04MmQ1LTQ0MDktYmM1MC0yYWRlNTc4NDk3MWbYAgTgAgE&sid=428f71ca7904df782b35081682ab16e2&dist=0&keep_landing=1&sb_price_type=total&type=total&" target="_blank">ЗАБРОНЮВАТИ</a>
+                <a class='button' href="https://www.booking.com/hotel/ua/holiday-stay-nika.ru.html" target="_blank">ЗАБРОНЮВАТИ</a>
             </div>
-
         </div>
     </div>
 
     <div id="music-toggle">
         <img id="music-icon" src="photo/1109198e-eb9d-4b13-ac1f-a83118e94801_removalai_preview.png" alt="Музика вкл">
-
     </div>
     
-    <!-- Тег <audio> без атрибута 'controls' для відсутності кнопок play -->
-        <audio id="audio" src="music/acoustic-emotional-145990.mp3" loop></audio> <!-- Без autoplay -->
-
+    <audio id="audio" src="music/acoustic-emotional-145990.mp3" loop></audio>
     <button type='button' id='btnka'>Play/Pause</button>
-
     <script src="app.js"></script>
-
 </div>
+
+<!-- НОВА СЕКЦІЯ: Інформація -->
+<section id="info" class="info-section">
+    <div class="container">
+        <h2 class="info-title">Про готель Holiday Stay Nika</h2>
+        <p class="info-text">
+            У помешканні Holiday stay Nika, яке розміщено у Буську, у розпорядженні гостей є сад, спільний лаунж, тераса та безкоштовний Wi-Fi. Серед іншого до розпорядження гостей обслуговування номерів, ресторан та дитячий ігровий майданчик. Для зручності гостей безкоштовна приватна парковка. Гостям пропонують платну послугу трансферу з/до аеропорту.
+        </p>
+        <p class="info-text">
+            У помешканні Holiday stay Nika усі номери устатковані шафою. У помешканні Holiday stay Nika усі номери мають окрему ванну кімнату з душем та безкоштовними туалетно-косметичними засобами. У свою чергу гості можуть помилуватися чудовим видом на сад. У помешканні Holiday stay Nika номери укомплектовано телевізором із плоским екраном із супутниковими каналами.
+        </p>
+        <p class="info-text">
+            У помешканні Holiday stay Nika можна пограти в настільний теніс.
+        </p>
+        <p class="info-text">
+            Серед мов, якими володіють працівники цілодобової стійки реєстрації, варто відзначити такі: англійська та українська.
+        </p>
+    </div>
+</section>
+
+<!-- НОВА СЕКЦІЯ: Зручності -->
+<section id="features" class="features-section">
+  <div class="container">
+    <h2 class="features-title">Зручності та переваги</h2>
+    <div class="features-grid">
+      <div class="feature-item"><i class="fas fa-swimming-pool"></i> Відкритий басейн</div>
+      <div class="feature-item"><i class="fas fa-parking"></i> Безкоштовна парковка</div>
+      <div class="feature-item"><i class="fas fa-smoking-ban"></i> Номери для некурців</div>
+      <div class="feature-item"><i class="fas fa-utensils"></i> Ресторан</div>
+      <div class="feature-item"><i class="fas fa-concierge-bell"></i> Обслуговування номерів</div>
+      <div class="feature-item"><i class="fas fa-shuttle-van"></i> Трансфер з/до аеропорту</div>
+      <div class="feature-item"><i class="fas fa-users"></i> Сімейні номери</div>
+      <div class="feature-item"><i class="fas fa-wifi"></i> Безкоштовний Wi-Fi</div>
+      <div class="feature-item"><i class="fas fa-glass-cheers"></i> Бар</div>
+      <div class="feature-item"><i class="fas fa-coffee"></i> Добрий сніданок</div>
+    </div>
+    <div class="features-extra">
+      <p><strong>Особливості помешкання:</strong> Ідеально підходить для того, щоб зупинитися на 1 ніч! Вид на сад. Безкоштовна приватна автостоянка на території.</p>
+      <a class="features-button" href="https://www.booking.com/hotel/ua/holiday-stay-nika.ru.html" target="_blank">Забронювати зараз</a>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
