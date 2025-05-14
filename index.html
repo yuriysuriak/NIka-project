@@ -2,47 +2,46 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Stay Nika</title>
     <link rel='stylesheet' href='style.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <title>Ресторан</title>
 </head>
 <body>
 
-<div class='header'>
-    <div class='container'>
-        <div class='header-line'>
-            <div class='header-logo'>
-                <img src="photo/logo.png" alt="Логотип">
+<header class="header">
+    <div class="container">
+        <div class="header-line">
+            <div class="header-logo">
+                <img src="photo/logo.png" alt="Логотип Holiday Stay Nika">
             </div>
 
-            <div class="nav">
+            <!-- Бургер-іконка -->
+            <div class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Основна навігація (для десктопу) -->
+            <nav class="desktop-nav">
                 <a class="nav-item" href="#home">ГОЛОВНА</a>
-                <a class="nav-item" href="#menu">МЕНЮ</a>
                 <a class="nav-item" href="#about">ПРО НАС</a>
-            </div>
-
-            <div class='cart'>
-                <a href="#"><img class='cart-img' src="photo/cart.png" alt="Корзина"></a>
-            </div>
+                <a class="nav-item" href="#features">ЗРУЧНОСТІ</a>
+                <div class='cart'>
+                    <a href="#"><img class='cart-img' src="photo/cart.png" alt="Корзина"></a>
+                </div>
+            </nav>
 
             <div class='phone'>
                 <div class='phone-holder'>
                     <div class='phone-img'>
                         <img src="photo/phone.png" alt="Телефон">
                     </div>
-<<<<<<< HEAD
-                    <div class='number'><a class='num' href='#'>+380-068-427-2222</a></div>
-=======
-
-                    <div class='number'><a class='num' href='#'>+380-068-427-2222</a></div>
-                </div>
-
-                <div class='phone-text'>
-                    Зв'яжіться з нами для <br> бронювання
->>>>>>> 211315f0e1f873a56b8c9a52b06166097276523a
+                    <div class='number'><a class='num' href='tel:+3800684272222'>+380-068-427-2222</a></div>
                 </div>
                 <div class='phone-text'>Зв'яжіться з нами для <br> бронювання</div>
             </div>
@@ -53,17 +52,26 @@
         </div>
     </div>
 
-    <div id="music-toggle">
-        <img id="music-icon" src="photo/1109198e-eb9d-4b13-ac1f-a83118e94801_removalai_preview.png" alt="Музика вкл">
-    </div>
-    
-    <audio id="audio" src="music/acoustic-emotional-145990.mp3" loop></audio>
-    <button type='button' id='btnka'>Play/Pause</button>
-    <script src="app.js"></script>
-</div>
+    <!-- Мобільне меню -->
+    <nav class="mobile-nav">
+        <a class="nav-item" href="#home">ГОЛОВНА</a>
+        <a class="nav-item" href="#about">ПРО НАС</a>
+        <a class="nav-item" href="#features">ЗРУЧНОСТІ</a>
+        <div class='mobile-cart'>
+            <a href="#"><img class='cart-img' src="photo/cart.png" alt="Корзина"></a>
+        </div>
+    </nav>
+</header>
 
-<!-- НОВА СЕКЦІЯ: Інформація -->
-<section id="info" class="info-section">
+<section id="home" class="hero">
+    <div class="hero-bg" style="background-image: linear-gradient(rgba(68, 68, 65, 0.763), rgba(0, 30, 48, 0.834)), url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/167121611.jpg?k=3b81af6df1cf370d13cc9c468efa77714fb11b26f57a70a2d895a748f3aa2192&o=&hp=1')"></div>
+    <div class="hero-text-container">
+        <h1>Holiday stay Nika</h1>
+        <p>Комфорт, затишок і турбота <span class="nepali-font"> - Ми чекаємо саме на вас</span></p>
+        <a class="btn" href="#about">Дізнатися більше</a>
+    </div>
+</section>
+<section id="about" class="info-section">
     <div class="container">
         <h2 class="info-title">Про готель Holiday Stay Nika</h2>
         <p class="info-text">
@@ -81,7 +89,6 @@
     </div>
 </section>
 
-<!-- НОВА СЕКЦІЯ: Зручності -->
 <section id="features" class="features-section">
   <div class="container">
     <h2 class="features-title">Зручності та переваги</h2>
@@ -99,10 +106,22 @@
     </div>
     <div class="features-extra">
       <p><strong>Особливості помешкання:</strong> Ідеально підходить для того, щоб зупинитися на 1 ніч! Вид на сад. Безкоштовна приватна автостоянка на території.</p>
-      <a class="features-button" href="https://www.booking.com/hotel/ua/holiday-stay-nika.ru.html" target="_blank">Забронювати зараз</a>
     </div>
   </div>
 </section>
 
+<div id="music-player">
+    <div class="music-container">
+        <button id="music-btn" class="music-control">
+            <span id="music-icon" class="music-icon">
+                <i class="fas fa-play"></i>
+            </span>
+            <span id="music-status" class="music-text">Play Music</span>
+        </button>
+        <audio id="bg-music" src="music/acoustic-emotional-145990.mp3" loop></audio>
+    </div>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
