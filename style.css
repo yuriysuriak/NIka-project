@@ -730,3 +730,52 @@ nav ul li a {
 .features-button:hover {
   background-color: #b95500;
 }
+@media (max-width: 450px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0.8rem;
+    height: auto;
+  }
+
+  .header-logo img {
+    height: 45px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 0.3rem;
+  }
+
+  .nav-item {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .hero-text-container {
+    padding: 4% 5%;
+  }
+
+  .hero-text-container h1 {
+    font-size: 1.3rem;
+    letter-spacing: 0.04em;
+  }
+
+  .hero-text-container p {
+    font-size: 0.85rem;
+    margin: 0.3rem 0;
+    letter-spacing: 0.03em;
+  }
+
+  .nepali-font {
+    font-size: 0.95rem;
+  }
+
+  .hero-text-container .btn {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.9rem;
+    margin: 0.2rem;
+  }
+}
+
