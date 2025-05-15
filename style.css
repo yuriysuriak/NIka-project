@@ -779,3 +779,234 @@ nav ul li a {
   }
 }
 
+/*---------------------------------------contact-section------------------------------*/
+.contact-section {
+  padding: 50px;
+  margin: 20px;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #333;
+  margin: 8px 8px;
+  padding: 8px;
+  text-align: center;
+}
+
+.contact-item i {
+  font-size: 20px;
+  color: #333;
+}
+
+.google-map {
+  padding-bottom: 30%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .google-map {
+    padding-bottom: 80%;
+    position: relative;
+  }
+  
+
+}
+
+@media screen and (max-width: 400px) {
+  .contact-section h2 {
+    font-size: 24px;
+  }
+
+  .contact-item a {
+    font-size: 14px;
+  }
+
+}
+.content-page {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+  font-size: 1.1em;
+}
+
+.content-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content-page p {
+  line-height: 1.6;
+}
+
+
+.footer {
+    background-color: #333; /* Темне тло для контрасту */
+    padding: 40px 0;
+    color: white;
+}
+  
+  
+.footer .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+.footer .footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+}
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .footer-col {
+    width: 40%;
+    padding: 0 .75rem;
+  }
+  
+  .footer-col h4 {
+    font-size: 1rem;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 2.1875rem;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.625rem;
+    background-color: #ffffff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 3.125rem;
+  }
+  
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: .625rem;
+  }
+  
+  .footer-col ul li a {
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: .5rem;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 .625rem .625rem 0;
+    text-align: center;
+    line-height: 2.5rem;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  
+  .footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  .creator{
+    margin: 1rem;
+    padding: 1rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    font-size: 0.6rem;
+    line-height: 0.2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+.footer .footer-col ul .nav-item {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+  
+  /*------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*------------------------------------responsive media queries------for footer--------------------------------------------------------------*/
+  
+  @media(max-width: 740px) {
+    .footer {
+      margin-top: 2.5rem;
+    }
+  
+    .footer-col {
+      width: 50%;
+      margin-bottom: 1.875rem;
+    }
+  }
+  
+  @media(max-width: 574px) {
+    .footer-col {
+      width: 100%;
+    }
+    .creator {
+      font-size: 0.4rem;
+    }
+  }
+   
+  @media(max-width: 433px) {
+ 
+    .creator {
+      font-size: 0.38.5rem;
+    }
+  }
