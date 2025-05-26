@@ -559,3 +559,39 @@
                 justify-content: center;
             }
         }
+
+.language-switcher {
+    position: fixed;
+    bottom: 75px; /* замість top: 20px; */
+    right: 20px;
+    z-index: 1000;
+}
+
+.lang-btn {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
+}
+
+.lang-btn:hover {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lang-icon {
+    margin-right: 8px;
+    color: #333;
+}
+
+.lang-text {
+    font-weight: 600;
+    font-size: 14px;
+}
