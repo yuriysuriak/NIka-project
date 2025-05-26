@@ -723,3 +723,105 @@
             width: 90%;
         }
     }
+
+    /* Language Switcher */
+.language-switcher {
+    position: fixed;
+    bottom: 75px; /* замість top: 20px; */
+    right: 20px;
+    z-index: 1000;
+}
+
+.lang-btn {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
+}
+
+.lang-btn:hover {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lang-icon {
+    margin-right: 8px;
+    color: #333;
+}
+
+.lang-text {
+    font-weight: 600;
+    font-size: 14px;
+}
+ /* Адаптація для 1030x900 */
+        @media screen and (max-width: 1078px) {
+            .container {
+                width: 95%;
+                padding: 0 10px;
+            }
+            
+            .header-line {
+                flex-wrap: wrap;
+                padding: 10px 0;
+            }
+            
+            .header-logo img {
+                width: 120px;
+            }
+            
+            .desktop-nav {
+                order: 3;
+                width: 100%;
+                margin-top: 15px;
+                justify-content: center;
+            }
+            
+            .phone, .btn {
+                margin: 10px 5px;
+            }
+            
+            .hero-text-container h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-text-container p {
+                font-size: 1.1rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            
+            .google-map iframe {
+                width: 100%;
+                height: 400px;
+            }
+            
+            .footer-container {
+                flex-direction: column;
+            }
+            
+            .footer-col {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        
+        @media screen and (max-height: 900px) {
+        
+            .hero-text-container {
+                padding-top: 80px;
+            }
+            
+            .info-section, .features-section {
+                padding: 30px 0;
+            }
+        }
